@@ -1,0 +1,45 @@
+name: bizeval
+description: 商机评估应用 - 拍照分析商业机会
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  camera: ^0.10.5+2
+  path_provider: ^2.0.15
+  path: ^1.8.3
+  image_picker: ^0.8.9
+  provider: ^6.0.5
+  shared_preferences: ^2.2.2
+  flutter_dotenv: ^5.1.0
+  permission_handler: ^11.0.1
+  image: ^4.0.17
+  flutter_native_splash: ^2.3.1
+  #flutter_launcher_icons: ^0.13.1
+  #aliyun_sms: ^1.0.0 暂时注释掉，等实现短信功能时再启用
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+
+# 修改图标配置部分
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  # 如果没有单独的前景图标文件，可以注释掉下面这行
+  # adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"
